@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: planner
+  datasource:
+    url: ${H2.URL}
+    driver-class-name: org.h2.Driver
+    username: ${H2.USER}
+    password: ${H2.PASS}
+  jpa:
+#    hibernate:
+#      ddl-auto: update
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  output:
+    ansi:
+      enabled: ALWAYS
+server:
+  port: 8083
