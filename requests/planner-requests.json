@@ -1,0 +1,476 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-07-11T02:30:56.331Z",
+  "__export_source": "insomnia.desktop.app:v9.3.2",
+  "resources": [
+    {
+      "_id": "req_9b3afeb8263843358e60e8c8788cc53c",
+      "parentId": "fld_37babc8fbfc54eafa5ef08daac736ade",
+      "modified": 1720660442335,
+      "created": 1720659189359,
+      "url": "localhost:8083/trips/5636d07f-d798-42e2-aeff-0da439ecfcfb/activities",
+      "name": "Register activity",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Visitar o Passeio Público\",\n\t\"occursAt\": \"2024-11-15T19:00:00.000Z\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720659189359,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_37babc8fbfc54eafa5ef08daac736ade",
+      "parentId": "fld_93cd933181194e359faf38359bb03821",
+      "modified": 1720659184583,
+      "created": 1720659184583,
+      "name": "activities",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720659184583,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_93cd933181194e359faf38359bb03821",
+      "parentId": "wrk_scratchpad",
+      "modified": 1720664991783,
+      "created": 1720569418553,
+      "name": "Planner - Rocketseat",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720569418553,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_scratchpad",
+      "parentId": null,
+      "modified": 1710897656559,
+      "created": 1710897656559,
+      "name": "Scratch Pad",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_5ea8601b5b604d9a938d601481288274",
+      "parentId": "fld_5b3901f4bf4048cebdf2c7895e0341d0",
+      "modified": 1720577149836,
+      "created": 1720574082193,
+      "url": "localhost:8083/participants/6371b19a-8817-4d56-8621-2f7c30f5b22d/confirm",
+      "name": "Confirmed participant",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"participantName\": \"Sofia Dias Pereira Gomes\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574096648,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5b3901f4bf4048cebdf2c7895e0341d0",
+      "parentId": "fld_93cd933181194e359faf38359bb03821",
+      "modified": 1720574092383,
+      "created": 1720574092383,
+      "name": "participants",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720574092383,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5fe00a62e08544ed909b4b36632cacb6",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720664868712,
+      "created": 1720575055616,
+      "url": "localhost:8083/trips/ba6e3ff2-545e-4b62-b9ce-d1217b3fb1e2/invite",
+      "name": "Invite participant",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"participantEmail\": \"felipe123@example.com\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574054084,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "parentId": "fld_93cd933181194e359faf38359bb03821",
+      "modified": 1720574043976,
+      "created": 1720574043976,
+      "name": "trips",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1720574043976,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_eefaf3d4757e47949d09f962570f9310",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720664878038,
+      "created": 1720661293896,
+      "url": "localhost:8083/trips/ba6e3ff2-545e-4b62-b9ce-d1217b3fb1e2/links",
+      "name": "register link",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"Instagram do Jardim Botanico\",\n\t\"url\": \"https://www.instagram.com/jardimbotanicocuritiba/\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574054034,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_df438ffedc5a4af9ae077e568884e9b9",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720574062150,
+      "created": 1720571763864,
+      "url": "localhost:8083/trips/48b572ee-a85f-4472-a864-8c5da317b729",
+      "name": "Update trip by id",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"destination\": \"Curitiba, PR\",\n  \"startsAt\": \"2024-11-04T10:15:30.734Z\",\n  \"endsAt\": \"2024-11-28T15:30:45.734Z\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053984,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d1459d3bbfb644a782d48560e7935dcf",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720664886789,
+      "created": 1720572244175,
+      "url": "localhost:8083/trips/ba6e3ff2-545e-4b62-b9ce-d1217b3fb1e2/confirm",
+      "name": "Confirmed trip",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053884,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bf9873df22d2441c8b925e5b291aa537",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720574055567,
+      "created": 1720571085041,
+      "url": "localhost:8083/trips/e0dcce2a-ee71-460a-a5c7-96d15cf93f57",
+      "name": "Find trip by id",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"destination\": \"Curitiba, PR\",\n  \"startsAt\": \"2024-11-04T10:15:30.734Z\",\n  \"endsAt\": \"2024-11-28T15:30:45.734Z\",\n  \"emailsToInvite\": [\n    \"tatianedias@example.com\",\n    \"sofiadias@example.com\"\n  ],\n  \"ownerEmail\": \"mauricioferreira@example.com\",\n  \"ownerName\": \"Mauricio Ferreira\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053784,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bea4ad4c28cb48c39d1aa230a001f593",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720576939004,
+      "created": 1720576137583,
+      "url": "localhost:8083/trips/7e150875-1436-4117-a78b-37f150b0a9da/participants",
+      "name": "find all participants by trip id",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"destination\": \"Curitiba, PR\",\n  \"startsAt\": \"2024-11-04T10:15:30.734Z\",\n  \"endsAt\": \"2024-11-28T15:30:45.734Z\",\n  \"emailsToInvite\": [\n    \"tatianedias@example.com\",\n    \"sofiadias@example.com\"\n  ],\n  \"ownerEmail\": \"mauricioferreira@example.com\",\n  \"ownerName\": \"Mauricio Ferreira\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053734,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1eaf7fd7213c4c8ab3336b8c929e9c78",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720660399458,
+      "created": 1720660356114,
+      "url": "localhost:8083/trips/5636d07f-d798-42e2-aeff-0da439ecfcfb/activities",
+      "name": "find all activities by trip id",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"destination\": \"Curitiba, PR\",\n  \"startsAt\": \"2024-11-04T10:15:30.734Z\",\n  \"endsAt\": \"2024-11-28T15:30:45.734Z\",\n  \"emailsToInvite\": [\n    \"tatianedias@example.com\",\n    \"sofiadias@example.com\"\n  ],\n  \"ownerEmail\": \"mauricioferreira@example.com\",\n  \"ownerName\": \"Mauricio Ferreira\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053709,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4c7fc2089ef04aabbd2fb6a8f735bab1",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720662002876,
+      "created": 1720661975400,
+      "url": "localhost:8083/trips/0ffd0faa-b02e-479b-bfef-5e6ef22efb1f/links",
+      "name": "find all links by trip id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053696.5,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e971479d97824b0c995915d4da1e1569",
+      "parentId": "fld_d280deeaf2dc4ff181a938bf080c01ed",
+      "modified": 1720574053810,
+      "created": 1720569424293,
+      "url": "localhost:8083/trips",
+      "name": "Create trip",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"destination\": \"Curitiba, PR\",\n  \"startsAt\": \"2024-11-04T10:15:30.734Z\",\n  \"endsAt\": \"2024-11-28T15:30:45.734Z\",\n  \"emailsToInvite\": [\n    \"tatianedias@example.com\",\n    \"sofiadias@example.com\"\n  ],\n  \"ownerEmail\": \"mauricioferreira@example.com\",\n  \"ownerName\": \"Mauricio Ferreira\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/9.3.2"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1720574053684,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_99d30891da4bdcebc63947a8fc17f076de878684",
+      "parentId": "wrk_scratchpad",
+      "modified": 1710901096998,
+      "created": 1710897664319,
+      "name": "Base Environment",
+      "data": {
+        "accessToken": "{% response 'body', 'req_34de30391bfa4f02a04b88a4b205a0f6', 'b64::JC5hY2Nlc3NUb2tlbg==::46b', 'always', 60 %}"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "accessToken"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1710897664319,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_99d30891da4bdcebc63947a8fc17f076de878684",
+      "parentId": "wrk_scratchpad",
+      "modified": 1710897664323,
+      "created": 1710897664323,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}

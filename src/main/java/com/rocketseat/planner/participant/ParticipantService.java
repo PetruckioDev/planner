@@ -38,15 +38,10 @@ public class ParticipantService {
     }
 
     public List<ParticipantResponse> getAllParticipants(UUID tripId) {
-        return participantRepository.findByTripId(tripId).stream()
-                .map(participant ->
-                        new ParticipantResponse(
-                                participant.getId(),
-                                participant.getParticipantName(),
-                                participant.getParticipantEmail(),
-                                participant.isConfirmed()
-                        )
-                )
+        return participantRepository
+                .findByTripId(tripId)
+                .stream()
+                .map(participant -> new ParticipantResponse(participant.getId(), participant.getParticipantName(), participant.getParticipantEmail(), participant.isConfirmed()))
                 .toList();
     }
 }

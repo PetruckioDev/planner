@@ -4,5 +4,5 @@ create table participants (
     participant_email varchar(255) not null,
     is_confirmed boolean not null,
     trip_id uuid,
-    foreign key (trip_id) references trips(id)
+    foreign key (trip_id) references trips(id) on delete cascade
 );
